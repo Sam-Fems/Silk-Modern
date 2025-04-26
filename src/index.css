@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.color {
+  color: #d4d4d4;
+}
+
+.h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hover {
+  accent-color: #BFA27A;
+}
+
+/* primary color #2C2C2C: Logo, NavBar Footerbg, buttons(Shop Now and Add to Cart), hover effects and icons */
+/* accent-color: outlines, icons and borders and buy now buttons */
+/* background-color: forms, sections, product-cards and containers */
