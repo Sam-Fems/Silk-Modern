@@ -20,7 +20,7 @@ export const balanceArrivalItems = [
 export const adidaArrivalItems = [
   { label: "New Arrivals", href: "/pumaArrival" },
 ];
-export const womenArrivalItemns = [
+export const womenArrivalItems = [
   { label: "New Arrivals", href: "/pumaArrival" },
 ];
 

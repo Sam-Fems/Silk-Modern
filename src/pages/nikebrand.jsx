@@ -1,5 +1,6 @@
 import React from "react";
 import { nikeItems, nikeArrivalItems } from "../constants";
+import nike from "../assets/Logos/Nike.png";
 import { Star, ArrowBigRight } from "lucide-react";
 import { useCart } from "../context/cartContext";
 import { Link } from "react-router";
@@ -14,6 +15,7 @@ const Nikebrand = () => {
           className="text-center items-center text-2xl font-medium text-neutral-700 h2 bg-amber-300 border border-[#BFA27A]"
         >
           <Link className="flex justify-center gap-2" to={item.href}>
+            <img src={nike} className="h-6 pt-2" alt="nike-logo" />
             {item.label}
             <ArrowBigRight size={30} />
           </Link>
@@ -23,7 +25,7 @@ const Nikebrand = () => {
         {nikeItems.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-6 rounded-md border border-[#BFA27A] mt-2 ml-2 mr-2 mb-2 shadow hover:shadow-xl transition duration-300 cursor-pointer"
+            className="flex flex-col items-center p-6 mt-2 ml-2 mr-2 mb-2 shadow hover:shadow-xl transition duration-300 cursor-pointer"
           >
             <img
               src={item.image}

@@ -1,6 +1,8 @@
 import React from "react";
 import { balanceArrivalItems, balanceItems } from "../constants";
+import balance from '../assets/Logos/Balance.png'
 import { Star, ArrowBigRight } from "lucide-react";
+import { Link } from "react-router";
 import { useCart } from "../context/cartContext";
 
 const Adidasbrand = () => {
@@ -10,9 +12,10 @@ const Adidasbrand = () => {
       {balanceArrivalItems.map((item, index) => (
               <div
                 key={index}
-                className="text-center items-center text-2xl font-medium text-neutral-700 h2 bg-amber-300 border border-[#BFA27A]"
+                className="text-center items-center text-2xl flex justify-center font-medium text-neutral-700 h2 bg-amber-300 border border-[#BFA27A]"
               >
-                <Link className="flex justify-center gap-2" to={item.href}>
+                <img src={balance} className="size-10" alt="" />
+                <Link className="flex gap-2" to={item.href}>
                   {item.label}
                   <ArrowBigRight size={30} />
                 </Link>
@@ -22,7 +25,7 @@ const Adidasbrand = () => {
         {balanceItems.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-6 rounded-md border border-[#BFA27A] mt-2 ml-2 mr-2 mb-2 shadow hover:shadow-xl transition duration-300 cursor-pointer"
+            className="flex flex-col items-center p-6 mt-2 ml-2 mr-2 mb-2 shadow hover:shadow-xl transition duration-300 cursor-pointer"
           >
             <img
               src={item.image}

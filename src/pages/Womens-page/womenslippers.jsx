@@ -1,20 +1,31 @@
 import React from "react";
-import { Star } from "lucide-react";
+import { Star, ArrowBigRight } from "lucide-react";
+import women from '../../assets/Logos/Madden.png'
 import { useCart } from "../../context/cartContext";
-import { womenItems } from "../../constants";
+import { Link } from 'react-router'
+import { womenItems, womenArrivalItems } from "../../constants";
 
 const Womenbrand = () => {
   const { addToCart } = useCart();
   return (
     <>
-      {/* <div className="h1 text-center text-3xl text-neutral-200 bg-[#BFA27A] w-full h-full">
-          Nike for men
-        </div> */}
+      {womenArrivalItems.map((item, index) => (
+        <div
+          key={index}
+          className="text-center items-center text-2xl flex justify-center font-medium text-neutral-700 h2 bg-amber-300 border border-[#BFA27A]"
+        >
+          <img src={women} className="w-14 h-10" alt="" />
+          <Link className="flex gap-2" to={item.href}>
+            {item.label}
+            <ArrowBigRight size={30} />
+          </Link>
+        </div>
+      ))}
       <section className="grid gap-10 md:grid-cols-4 max-sm:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
         {womenItems.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-6 rounded-md border border-[#BFA27A] mt-2 ml-2 mr-2 mb-2 shadow hover:shadow-xl transition duration-300 cursor-pointer"
+            className="flex flex-col items-center p-6 mt-2 ml-2 mr-2 mb-2 shadow hover:shadow-xl transition duration-300 cursor-pointer"
           >
             <img
               src={item.image}
