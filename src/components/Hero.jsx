@@ -20,7 +20,7 @@ const Hero = () => {
         ))}
 
         <div className="absolute inset-0 flex items-center justify-center bg-black/60">
-          <h1 className="text-7xl  md:text-7xl lg:text-8xl gap-2 flex text-center font-extrabold drop-shadow-lg text-amber-100 px-4">
+          <h1 className="text-7xl md:text-7xl lg:text-8xl gap-2 flex text-center font-extrabold drop-shadow-lg text-amber-100 px-4">
             Step Into Style
             <Sparkles
               size={70}

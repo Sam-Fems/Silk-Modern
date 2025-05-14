@@ -491,3 +491,15 @@ export const womenItems = [
     rating: 5,
   },
 ];
+
+/* import for nikeArrival*/
+import nikeArrival1 from "../assets/puma/pumaArrivals/Charles-F.png"
+import nikeArrival2 from "../assets/puma/pumaArrivals/Deviate-NITRO™-3-Women's-Running-Shoes.avif"
+import nikeArrival3 from "../assets/puma/pumaArrivals/GV-Special-Sneakers.avif"
+import nikeArrival4 from "../assets/puma/pumaArrivals/Charles-F.png"
+import nikeArrival5 from "../assets/puma/pumaArrivals/Charles-F.png"
+import nikeArrival6 from "../assets/puma/pumaArrivals/Charles-F.png"
+import nikeArrival7 from "../assets/puma/pumaArrivals/Charles-F.png"
+import nikeArrival8 from "../assets/puma/pumaArrivals/Charles-F.png"
+import nikeArrival9 from "../assets/puma/pumaArrivals/Charles-F.png"
+ 
